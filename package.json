@@ -1,0 +1,32 @@
+{
+  "name": "polyhedron",
+  "version": "1.0.0",
+  "description": "Visualization of result of eduidl/tetravalent-goldberg-polyhedron",
+  "main": "doc/index.js",
+  "scripts": {
+    "build": "webpack",
+    "lint": "eslint src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduidl/polyhedron.git"
+  },
+  "author": "Yuma Hiramatsu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eduidl/polyhedron/issues"
+  },
+  "homepage": "https://eduidl.github.io/polyhedron/",
+  "dependencies": {
+    "three": "^0.99.0",
+    "three-trackballcontrols": "0.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "eslint": "^5.10.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
