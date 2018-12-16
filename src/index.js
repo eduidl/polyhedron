@@ -1,5 +1,5 @@
-import ThreeJS from '../lib/three_js.js'
-import { POINTS, EDGES } from '../lib/data.js';
+import ThreeJS from './three_js.js'
+import { POINTS, EDGES } from './data.js';
 
 const getUrlQuery = () => {
   let query_params = {};
