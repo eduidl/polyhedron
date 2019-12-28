@@ -2,7 +2,7 @@
   "name": "polyhedron",
   "version": "0.1.0",
   "description": "Visualization of result of eduidl/tetravalent-goldberg-polyhedron",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "scripts": {
     "build:debug": "webpack",
     "build:release": "NODE_ENV=production webpack",
@@ -20,7 +20,6 @@
     "url": "https://github.com/eduidl/polyhedron/issues"
   },
   "homepage": "https://eduidl.github.io/polyhedron/",
-  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.13.0",
     "@typescript-eslint/parser": "^2.13.0",
@@ -36,5 +35,6 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
-  }
+  },
+  "dependencies": {}
 }

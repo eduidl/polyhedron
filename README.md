@@ -9,9 +9,9 @@ See https://eduidl.github.io/polyhedron/
 ## Run 
 
 ```sh
-npm install
+npm i
 # local server (webpack-dev-server)
-npm run server
+npm run start
 # build for GitHub Pages
-npm run build
+npm run build:release
 ```
