@@ -7,7 +7,7 @@ const getIndexFromUrlQuery = (): string | undefined => {
   const url = window.location.search.slice(1).split("&");
   for (const kv of url) {
     const [k, v] = kv.split("=");
-    if (k == "index") {
+    if (k === "index") {
       return v;
     }
   }
@@ -21,7 +21,7 @@ const render = (): void => {
 
 const index = parseInt(getIndexFromUrlQuery() || "0");
 const tab = document.querySelector(`[data-index="${index}"]`);
-if (tab == null) {
+if (tab === null) {
   throw TypeError;
 }
 tab.classList.add("active");
