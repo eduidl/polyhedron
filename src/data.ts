@@ -1,4 +1,4 @@
-import { Edge, Point } from "./types";
+import { Point, Edge } from "./types";
 
 export const POINTS: Point[][] = [
   // M6L12

@@ -4,7 +4,7 @@ Visualization of result of [eduidl/tetravalent-goldberg-polyhedron](https://gith
 
 See https://eduidl.github.io/polyhedron/
 
-![image](https://user-images.githubusercontent.com/25898373/49688094-51046c80-fb50-11e8-9802-41e376f49019.png)
+![image](https://user-images.githubusercontent.com/25898373/71562803-d561be80-2ac8-11ea-9db3-ca54893721c2.png)
 
 ## Run 
 
