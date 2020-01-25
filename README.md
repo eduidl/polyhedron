@@ -1,12 +1,12 @@
 # Polyhedron
 
-Visualization of result of [eduidl/tetravalent-goldberg-polyhedron](https://github.com/eduidl/tetravalent-goldberg-polyhedron)
+Visualization of result of [eduidl/tgp-ceres](https://github.com/eduidl/tgp-ceres)
 
 See https://eduidl.github.io/polyhedron/
 
 ![image](https://user-images.githubusercontent.com/25898373/71562803-d561be80-2ac8-11ea-9db3-ca54893721c2.png)
 
-## Run 
+## Run
 
 ```sh
 npm i

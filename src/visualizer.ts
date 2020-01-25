@@ -16,8 +16,8 @@ export default class Visualizer {
     this.scene = new THREE.Scene();
 
     // camera
-    this.camera = new THREE.PerspectiveCamera(45, width / height, 1, 1000);
-    this.camera.position.set(25, 25, 25);
+    this.camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
+    this.camera.position.set(3, 3, 3);
 
     // renderer
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
