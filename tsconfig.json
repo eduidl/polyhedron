@@ -3,7 +3,7 @@
     "sourceMap": true,
     "target": "es5",
     "lib": [
-        "dom"
+      "dom"
     ],
     "strict": true,
     "noImplicitReturns": true,
@@ -12,9 +12,5 @@
   },
   "include": [
     "src/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
   ]
 }

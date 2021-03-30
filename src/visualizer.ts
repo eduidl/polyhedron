@@ -1,8 +1,8 @@
-import * as THREE from "three";
-import { ConvexGeometry } from "three/examples/jsm/geometries/ConvexGeometry";
-import { TrackballControls } from "three/examples/jsm/controls/TrackballControls";
+import * as THREE from 'three';
+import { ConvexGeometry } from 'three/examples/jsm/geometries/ConvexGeometry';
+import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls';
 
-import { Point, Edge } from "./types";
+import { Point, Edge } from './types';
 
 export default class Visualizer {
   scene: THREE.Scene;
@@ -24,7 +24,7 @@ export default class Visualizer {
     this.renderer.setSize(width, height);
     this.renderer.setClearColor(0x010101);
     this.renderer.setPixelRatio(window.devicePixelRatio);
-    const stage = document.getElementById("stage");
+    const stage = document.getElementById('stage');
     if (stage === null) {
       throw TypeError;
     }
@@ -46,29 +46,24 @@ export default class Visualizer {
       new ConvexGeometry(vertices),
       new THREE.MeshNormalMaterial({
         transparent: true,
-        opacity: 0.8
+        opacity: 0.8,
       })
     );
     this.scene.add(convex);
     for (const edge of edges) {
-      const geom = new THREE.Geometry();
-      geom.vertices.push(
-        new THREE.Vector3(
-          points[edge[0]][0],
-          points[edge[0]][1],
-          points[edge[0]][2]
-        )
-      );
-      geom.vertices.push(
-        new THREE.Vector3(
-          points[edge[1]][0],
-          points[edge[1]][1],
-          points[edge[1]][2]
-        )
-      );
+      const geometry = new THREE.BufferGeometry();
+      const vertices = new Float32Array([
+        points[edge[0]][0],
+        points[edge[0]][1],
+        points[edge[0]][2],
+        points[edge[1]][0],
+        points[edge[1]][1],
+        points[edge[1]][2],
+      ]);
+      geometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3));
       const line = new THREE.Line(
-        geom,
-        new THREE.LineBasicMaterial({ color: "black" })
+        geometry,
+        new THREE.LineBasicMaterial({ color: 'black' })
       );
       this.scene.add(line);
     }
