@@ -6,7 +6,7 @@
   "scripts": {
     "build:debug": "webpack",
     "build:release": "NODE_ENV=production webpack",
-    "start": "webpack-dev-server -w --open",
+    "start": "webpack-dev-server --static-watch --open",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix"
   },
@@ -21,18 +21,19 @@
   },
   "homepage": "https://eduidl.github.io/polyhedron/",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/parser": "^2.13.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-loader": "^3.0.3",
-    "html-webpack-plugin": "^3.2.0",
-    "prettier": "^1.19.1",
-    "three": "^0.125.0",
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.7.4",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
+    "@types/three": "^0.149",
+    "@typescript-eslint/eslint-plugin": "^5",
+    "@typescript-eslint/parser": "^5",
+    "eslint": "^7",
+    "eslint-config-prettier": "^8",
+    "eslint-loader": "^4",
+    "html-webpack-plugin": "^5",
+    "prettier": "^2",
+    "three": "^0.150.0",
+    "ts-loader": "^9",
+    "typescript": "^4",
+    "webpack": "^5",
+    "webpack-cli": "^5",
+    "webpack-dev-server": "^4"
   }
 }
